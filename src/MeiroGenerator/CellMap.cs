@@ -103,14 +103,14 @@ namespace MeiroGenerator
 		/// <summary>
 		/// 対象とする TextBox にセル情報を描画します。
 		/// </summary>
-		public void Draw(TextBox target, string WallChar)
+		public void Draw(TextBox target, string wallChar)
 		{
 			var sb = new StringBuilder();
 			foreach (var x in Enumerable.Range(0, Width))
 			{
 				foreach (var y in Enumerable.Range(0, Height))
 					if (Get(x, y).IsWall)
-						sb.Append(WallChar);
+						sb.Append(wallChar);
 					else
 						sb.Append("　");
 
